@@ -1,0 +1,56 @@
+{
+  "APP_NAME": "Meine Reise-App",
+  "STEP1_TITLE": "Schritt 1: Land und Stadt auswählen",
+  "COUNTRY": "Land",
+  "CITY": "Stadt",
+  "BUDGET": "Budget",
+  "NEXT": "Weiter",
+  "BACK": "Zurück",
+  "CALCULATE": "Berechnen",
+  "RESULT": "Ergebnis",
+  "SELECT_COUNTRY": "Wählen Sie ein Land",
+  "SELECT_CITY": "Wählen Sie eine Stadt",
+
+
+  "STEP2_TITLE": "Geben Sie Ihr Budget ein",
+  "STEP2_BUDGET": "Budget (COP)",
+  "SELECT_CURRENCY": "Währung auswählen",
+  "BACK_STEP1": "Zurück zu Schritt 1",
+  "NO_HISTORY": "Keine kürzlichen Anfragen",
+  "HISTORY_TITLE": "Kürzliche Anfragen",
+  "DATE": "Datum",
+
+  "FEELS_LIKE": "Gefühlt wie",
+  "HUMIDITY": "Luftfeuchtigkeit",
+  "WIND": "Wind",
+  "PRESSURE": "Luftdruck",
+  
+
+  "STEP3_TITLE": "Ergebnis der Umrechnung",
+  "COUNTRY_STEP3": "Land",
+  "CITY_STEP3": "Stadt",
+  "WEATHER": "Aktuelles Wetter",
+  "CURRENCY": "Landeswährung",
+  "BACK_HOME": "Zurück zum Start",
+  "ORIGINAL_BUDGET": "Ursprüngliches Budget",
+  "EXCHANGE_RATE": "Wechselkurs",
+  "CONVERTED_BUDGET": "Umgerechnetes Budget",
+
+
+  "COUNTRIES": {
+    "ENGLAND": "England",
+    "JAPAN": "Japan",
+    "INDIA": "Indien",
+    "DENMARK": "Dänemark"
+  },
+  "CITIES": {
+    "LONDON": "London",
+    "MANCHESTER": "Manchester",
+    "TOKYO": "Tokio",
+    "OSAKA": "Osaka",
+    "MUMBAI": "Mumbai",
+    "DELHI": "Delhi",
+    "COPENHAGUE": "Kopenhagen",
+    "AARHUS": "Aarhus"
+  }
+}

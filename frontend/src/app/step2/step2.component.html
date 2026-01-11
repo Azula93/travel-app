@@ -1,0 +1,23 @@
+<div class="card shadow-sm p-4">
+  <h4 class="mb-3">{{ 'STEP2_TITLE' | translate }}</h4>
+
+  <div class="mb-3">
+  <label for="budget" class="form-label">{{ 'STEP2_BUDGET' | translate }}</label>
+  <input type="number" id="budget" class="form-control" [(ngModel)]="budgetCOP">
+  <div *ngIf="errorMsg" class="text-danger mt-1">{{ errorMsg }}</div>
+</div>
+
+  <div class="mb-3">
+    <label for="currency" class="form-label">{{ 'SELECT_CURRENCY' | translate }}</label>
+    <select id="currency" class="form-select" [(ngModel)]="selectedCurrency">
+      <option *ngFor="let c of currencies" [value]="c.code">{{ c.name }}</option>
+    </select>
+  </div>
+
+  <div class="d-flex justify-content-between">
+    <button class="btn btn-secondary" (click)="backToStep1()">{{ 'BACK_STEP1' | translate }}</button>
+    <button class="btn btn-primary" (click)="saveBudget()">
+  {{ 'CALCULATE' | translate }}
+</button>
+  </div>
+</div>

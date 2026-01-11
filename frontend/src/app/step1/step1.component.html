@@ -1,0 +1,34 @@
+<br>
+<div class="card shadow-sm p-4">
+  <h4 class="mb-4">{{ 'STEP1_TITLE' | translate }}</h4>
+
+  <div class="row g-4 mb-4">
+    <div class="col-sm-6">
+      <label for="countrySelect" class="form-label">{{ 'COUNTRY' | translate }}</label>
+      <select
+        id="countrySelect"
+        class="form-select"
+        [(ngModel)]="selectedCountry"
+        (change)="onCountryChange(selectedCountry)">
+        <option [ngValue]="null" disabled selected>{{ 'SELECT_COUNTRY' | translate }}</option>
+        <option *ngFor="let c of countries" [ngValue]="c.id">{{ c.nameKey | translate }}</option>
+      </select>
+    </div>
+
+    <div class="col-sm-6">
+      <label for="citySelect" class="form-label">{{ 'CITY' | translate }}</label>
+      <select
+        id="citySelect"
+        class="form-select"
+        [(ngModel)]="selectedCity"
+        (change)="onCityChange(selectedCity!)">
+        <option [ngValue]="null" disabled selected>{{ 'SELECT_CITY' | translate }}</option>
+        <option *ngFor="let city of cities" [ngValue]="city.id">{{ city.nameKey | translate }}</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="text-end mt-4">
+    <button class="btn btn-primary" (click)="goToStep2()">{{ 'NEXT' | translate }}</button>
+  </div>
+</div>

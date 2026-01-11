@@ -1,0 +1,42 @@
+<div class="card p-4">
+  <h4 class="mb-4">{{ 'HISTORY_TITLE' | translate }}</h4>
+
+  <div *ngIf="history.length > 0; else noHistory">
+    <div class="table-responsive">
+      <table class="table table-striped table-hover">
+        <thead>
+          <tr>
+            <th>{{ 'DATE' | translate }}</th>
+            <th>{{ 'COUNTRY' | translate }}</th>
+            <th>{{ 'CITY' | translate }}</th>
+            <th>{{ 'STEP2_BUDGET' | translate }}</th>
+            <th>{{ 'CONVERTED_BUDGET' | translate }}</th>
+            <th>{{ 'CURRENCY' | translate }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of history">
+            <td>{{ item.date | date:'short' }}</td>
+            <td>{{ item.countryKey | translate }}</td>
+            <td>{{ item.cityKey | translate }}</td>
+            <td>{{ item.originalAmount | number:'1.0-0' }} COP</td>
+            <td>{{ item.convertedAmount | number:'1.2-2' }}</td>
+            <td>{{ item.currencySymbol }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <ng-template #noHistory>
+    <div class="alert alert-info text-center mt-3" role="alert">
+      {{ 'NO_HISTORY' | translate }}
+    </div>
+  </ng-template>
+
+  <div class="text-end mt-3">
+    <button class="btn btn-secondary" (click)="goHome()">
+      {{ 'BACK_HOME' | translate }}
+    </button>
+  </div>
+</div>

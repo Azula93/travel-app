@@ -1,0 +1,71 @@
+<div class="card p-4">
+  <h4 class="mb-4">{{ 'STEP3_TITLE' | translate }}</h4>
+
+  <div *ngIf="convertedAmount !== null; else loading">
+    <div class="row g-3">
+      <div class="col-md-6 mb-3">
+        <p><strong>🏙️ {{ 'COUNTRY_STEP3' | translate }}:</strong> {{ countryName }}</p>
+        <p><strong>📍 {{ 'CITY_STEP3' | translate }}:</strong> {{ cityName }}</p>
+        <p><strong>💹 {{ 'STEP3_BUDGET' | translate }}:</strong> {{ originalAmount | number:'1.0-0' }} COP</p>
+      </div>
+
+      <div class="col-md-6 mb-3">
+        <p><strong>🪙 {{ 'CURRENCY' | translate }}:</strong> {{ currencyName }} ({{ currencySymbol }})</p>
+        <p><strong>💳 {{ 'CONVERTED_BUDGET' | translate }}:</strong> {{ currencySymbol }} {{ convertedAmount | number:'1.2-2' }}</p>
+        <p><strong>🏦 {{ 'EXCHANGE_RATE' | translate }}:</strong> {{ exchangeRate | number:'1.4-4' }}</p>
+      </div>
+
+      <div class="col-12" *ngIf="weatherData">
+        <div class="weather-card mt-3 p-4 bg-light rounded-3 shadow-sm">
+          <h5 class="mb-3 text-center">
+            🌤️ {{ 'WEATHER' | translate }} en {{ weatherData.name }}
+          </h5>
+          
+          <div class="d-flex flex-column flex-sm-row align-items-center justify-content-center mb-3 text-center text-sm-start">
+            <i class="fas {{ getWeatherIcon(weatherData.weather[0].icon) }} fa-3x text-info me-sm-4 mb-2 mb-sm-0"></i>
+            <div>
+              <h3 class="mb-0">{{ weatherData.main.temp }}°C</h3>
+              <div class="text-capitalize">{{ weatherData.weather[0].description }}</div>
+            </div>
+          </div>
+
+          <div class="row g-2">
+            <div class="col-6 col-md-3">
+              <p class="mb-1"><i class="fas fa-temperature-high me-2"></i> {{ 'FEELS_LIKE' | translate }}:<br>{{ weatherData.main.feels_like }}°C</p>
+            </div>
+            <div class="col-6 col-md-3">
+              <p class="mb-1"><i class="fas fa-tint me-2"></i> {{ 'HUMIDITY' | translate }}:<br>{{ weatherData.main.humidity }}%</p>
+            </div>
+            <div class="col-6 col-md-3">
+              <p class="mb-1"><i class="fas fa-wind me-2"></i> {{ 'WIND' | translate }}:<br>{{ weatherData.wind.speed }} km/h</p>
+            </div>
+            <div class="col-6 col-md-3">
+              <p class="mb-1"><i class="fas fa-compress-alt me-2"></i> {{ 'PRESSURE' | translate }}:<br>{{ weatherData.main.pressure }} hPa</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12" *ngIf="weatherError">
+        <div class="alert alert-warning mt-3">
+          <i class="fas fa-exclamation-triangle me-2"></i> {{ weatherError }}
+        </div>
+      </div>
+
+      <div class="col-12 mt-3 text-end">
+        <button class="btn btn-secondary" (click)="goHome()">
+          {{ 'BACK_HOME' | translate }}
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <ng-template #loading>
+    <div class="text-center py-4">
+      <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden">{{ 'LOADING' | translate }}</span>
+      </div>
+      <p class="mt-2">{{ 'LOADING' | translate }}</p>
+    </div>
+  </ng-template>
+</div>

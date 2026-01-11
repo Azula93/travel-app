@@ -1,0 +1,56 @@
+{
+  "APP_NAME": "Travel-App",
+  "STEP1_TITLE": "Paso 1: Selecciona País y Ciudad de destino",
+  "COUNTRY": "País",
+  "CITY": "Ciudad",
+  "BUDGET": "Presupuesto",
+  "NEXT": "Siguiente",
+  "BACK": "Atrás",
+  "CALCULATE": "Calcular",
+  "RESULT": "Resultado",
+  "HISTORY": "Historial",
+  "SELECT_COUNTRY": "Seleccione un país",
+  "SELECT_CITY": "Seleccione una ciudad",
+
+  "STEP2_TITLE": "Introduce tu presupuesto",
+  "STEP2_BUDGET": "Presupuesto (COP)",
+  "SELECT_CURRENCY": "Selecciona la moneda de cambio",
+  "BACK_STEP1": "Volver al paso 1",
+
+  "STEP3_TITLE": "Resultado de la conversión",
+  "COUNTRY_STEP3": "País",
+  "WEATHER": "Clima actual",
+  "STEP3_BUDGET": "Presupuesto (COP)",
+  "CURRENCY": "Moneda local",
+  "CITY_STEP3": "Ciudad",
+  "BACK_HOME": "Volver al inicio",
+  "ORIGINAL_BUDGET": "Presupuesto original",
+  "EXCHANGE_RATE": "Tasa de cambio",
+  "CONVERTED_BUDGET": "Presupuesto convertido",
+  "DATE": "Fecha",
+  
+  "NO_HISTORY": "No hay consultas recientes",
+  "HISTORY_TITLE": "Consultas recientes",
+
+  "FEELS_LIKE": "Sensación térmica",
+  "HUMIDITY": "Humedad",
+  "WIND": "Viento",
+  "PRESSURE": "Presión",
+
+  "COUNTRIES": {
+    "ENGLAND": "Inglaterra",
+    "JAPAN": "Japón",
+    "INDIA": "India",
+    "DENMARK": "Dinamarca"
+  },
+  "CITIES": {
+    "LONDON": "Londres",
+    "MANCHESTER": "Manchester",
+    "TOKYO": "Tokio",
+    "OSAKA": "Osaka",
+    "MUMBAI": "Mumbai",
+    "DELHI": "Delhi",
+    "COPENHAGUE": "Copenhague",
+    "AARHUS": "Aarhus"
+  }
+}

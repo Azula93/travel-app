@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="" tests="3" assertions="19" errors="0" warnings="0" failures="0" skipped="0" time="0.686217">
+    <testsuite name="Feature" tests="3" assertions="19" errors="0" warnings="0" failures="0" skipped="0" time="0.686217">
+      <testsuite name="Tests\Feature\ExampleTest" file="C:\wamp64\www\infodec\backend\tests\Feature\ExampleTest.php" tests="1" assertions="1" errors="0" warnings="0" failures="0" skipped="0" time="0.225905">
+        <testcase name="test_example" class="Tests\Feature\ExampleTest" classname="Tests.Feature.ExampleTest" file="C:\wamp64\www\infodec\backend\tests\Feature\ExampleTest.php" line="15" assertions="1" time="0.225905"/>
+      </testsuite>
+      <testsuite name="Tests\Feature\WeatherApiTest" file="C:\wamp64\www\infodec\backend\tests\Feature\WeatherApiTest.php" tests="2" assertions="18" errors="0" warnings="0" failures="0" skipped="0" time="0.460312">
+        <testcase name="it_returns_weather_for_a_city" class="Tests\Feature\WeatherApiTest" classname="Tests.Feature.WeatherApiTest" file="C:\wamp64\www\infodec\backend\tests\Feature\WeatherApiTest.php" line="11" assertions="16" time="0.432696"/>
+        <testcase name="it_returns_error_if_city_missing" class="Tests\Feature\WeatherApiTest" classname="Tests.Feature.WeatherApiTest" file="C:\wamp64\www\infodec\backend\tests\Feature\WeatherApiTest.php" line="28" assertions="2" time="0.027616"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>
