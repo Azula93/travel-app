@@ -37,4 +37,4 @@ El proyecto no utiliza servicios de automatización simples; ha sido desplegado 
 **Silvia Riquett**
 * Tecnóloga en Análisis y Desarrollo de Software (SENA).
 * Enfoque en Ciberseguridad e Ingeniería de Software.
-* [LinkedIn]((https://www.linkedin.com/in/patricia-riquett/)) | [Portafolio]((https://patricia-portafolio.netlify.app/))
+* [LinkedIn](https://www.linkedin.com/in/patricia-riquett/) | [Portafolio](https://patricia-portafolio.netlify.app/)
